@@ -1,4 +1,4 @@
-<h2>This is where games will be, on a purely theoretical level</h2>
+<h2 class="heading">This is where games will be, on a purely theoretical level</h2>
 
 <div class="navbar">
 <% if session[:current_user] %>
@@ -12,3 +12,16 @@
     <a href="/sessions/new">Log-in!</a>
   <% end %>
 </div>
+
+
+<% if session[:current_user] %>
+<div class="gamemenu">
+	<a href="/hangman">HANGMAN</a>
+	<p></p>
+	<a href="/tictactoe">TIC-TAC-TOE</a>
+</div>
+  <% else %>
+ <div class="gamemenu">
+  	SIGN IN OR SIGN UP TO PLAY SOME... GAMES
+ </div>
+<% end %>
