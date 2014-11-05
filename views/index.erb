@@ -1,1 +1,14 @@
 <h2>This is where games will be, on a purely theoretical level</h2>
+
+<div class="navbar">
+<% if session[:current_user] %>
+    <form action="/sessions" method='post'>
+      <input type="hidden" name='_method' value='delete'>
+      <input type="submit" value='Log-Out'>
+    </form>
+   
+  <% else %>
+    <a href="/users/new">Sign Up!</a>
+    <a href="/sessions/new">Log-in!</a>
+  <% end %>
+</div>
