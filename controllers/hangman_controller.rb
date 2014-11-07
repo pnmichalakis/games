@@ -4,5 +4,6 @@ class HangmanController < ApplicationController
 	end
 
 	get '/hangman/new' do
+
 	end
 end
