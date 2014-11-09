@@ -6,10 +6,10 @@ Dir.glob("./{helpers,controllers,models}/*.rb").each do |file|
   puts "required #{file}"
 end
 
-
+require './models/hangman_game'
 
 map('/tictactoe'){run TicTacToeController }
-map('/hangman'){run HangmanController }
+map('/hangman_games'){run HangmanGamesController }
 map('/users'){ run UsersController }
 map('/profile'){ run ProfileController }
 map('/sessions'){ run SessionsController }

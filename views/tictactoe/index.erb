@@ -1,12 +1,48 @@
+<div>
+	
+
 <a href="/"><h3>Something topical about x's and o's.....</h3></a>
 
 <form class="newgame" action="/tictactoe/new">
 	<input type="submit" value="Start a New Game!">
 </form>
 
-<div class="gamearea"></div>
+<script>
 
 
-<!-- 
-prevent default
-empty div -->
+function startGame(){
+	document.turn = "X";
+	setMessage(document.turn + " gets to start. ");
+}
+
+
+
+function setMessage(msg){
+	document.getElementByID("message").innterText = msg;
+}
+
+
+
+</script>
+
+<div id="message">Messages</div>
+ <table border='10'>
+ 	<tr>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 	</tr>
+ 	<tr>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 	</tr>
+ 	<tr>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 		<td class="ttt">x</td>
+ 	</tr>
+ </table>
+
+	
+</div>

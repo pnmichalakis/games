@@ -1,8 +1,6 @@
 <a href="/"><h3>Hang 'em High.... or don't, actually.</h3></a>
 
-<form class="newgame" action="/hangman/new">
-	<input type="submit" value="Start a New Game!">
-</form>
+<button class="newgame">Start a new game</button>
 
 <!-- 
 prevent default
@@ -10,8 +8,22 @@ empty div -->
 
 <div class="gamearea"></div>
 
-<form class="guessform" action="/hangman" method="patch">
+<form class="guessform" action="/hangman_games" method="patch">
 	<input type="text">
 	<input class="guessbutton" type="submit" value="Guess">
 </form>
+
+<script>
+
+	$button = $(".newgame")
+
+
+	$button.on("click", function(){
+			console.log('tweezer');
+	})
+
+
+</script>
+
+
 

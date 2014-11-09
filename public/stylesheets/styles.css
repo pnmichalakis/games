@@ -61,5 +61,45 @@ h3{
 
 .newgame {
 	text-align: center;
-	margin-bottom: 20px;
+	margin: 0 auto;
 }
+.profile {
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	margin: 0 auto;
+	width: 150px;
+	border-radius: 25px;
+}
+.ttt{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
